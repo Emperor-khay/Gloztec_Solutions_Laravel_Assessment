@@ -49,6 +49,7 @@ Created Product Controller for all logic
 Routed all api urls required for CRUD functions using api resource methods (post, get, put, patch, delete) nd a prefix of v1
 Performed all necessry logic operatons for each CRUD function returning json error or json responce with resource when neccessary
 Protected route with sanctum
+Created Test file to test the create endpoint. Test works
 
 {app_url}api/v1/{api_routes}
 =============================================================================================
@@ -84,7 +85,9 @@ Approach:
 At the time of writing this, my completed assessment has already been pushed to my repository, so this will act as my Task Management fix for the completion of this task
 git add .
 git commit -m "Explained My Approach In Updated ReadMe File"
-git 
+git checkout -b feature/task-improvement
+git push assessment feature/task-improvement
+go to browser and create pull request
 ==========================================================================================
 
 ## **Task 5: SQL Query Challenge**  
@@ -107,11 +110,11 @@ You have the following tables:
 2. Get the **total revenue** for the current month.  
 3. List the **most sold products**.  
 
----
+==============================================================================================
+Approach:
+Created sql file for raw SQL query.
+See Query in querry_challange.sql
+==============================================================================================
 
-## **Submission Guidelines**  
-- Push your changes to **your GitHub repository**.  
-- Share the repository link with us.  
-- Include a **README update** explaining your approach.  
 
-**Good luck!** We’re looking for clean, efficient, and well-structured code.  
+Thank you!
