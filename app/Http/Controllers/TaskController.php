@@ -21,7 +21,7 @@ class TaskController extends Controller
     public function index() {
         $tasks = Task::all();
 
-        if($tasks->count < 1){
+        if($tasks->count() < 1){
             return response()->json([
                 'message' => 'No Tasks Available'
             ], 201);
